@@ -5,43 +5,62 @@ Branch Feature Forking Workflow é uma mistura de Branch Feature Workflow com Fo
 * [Sumário]
   * [Nova funcionalidade](#nova-funcionalidade)
   * [Forking](#forking)
+  * [Clonando o repositório](#clonando-o-repositório)
   * [Iniciando o desenvolvimento da feature](#iniciando-o-desenvolvimento-da-feature)
   * [Contribuindo](#contribuindo)
-  * [Atualizando seu repositório](#atualizando-seu-repositorio)
-  * [Feature em produção](#feature-em-producao)
+  * [Atualizando seu repositório](#atualizando-seu-repositório)
+  * [Feature em produção](#feature-em-produção)
   * [Limpeza](#limpeza)
   
 ## Nova funcionalidade
 
-Primeira coisa devemos tirar um branch a partir da master no repositório oficial, isso pode ser feito inclusive pelo GitHub
+Dado uma nova funcionalidade é necessário que a mesma seja criado no repositório oficial do projeto, isso pode ser feito pelo command line ou pelo próprio GitHub
+
+Vamos supor que nossa funcionalidade se chamará __feature-1__
 
 ![creating feature-1 branch](http://sc-cdn.scaleengine.net/i/a4338424388fdb37687dbf968097939f1.png)
 
 ## Forking
 
-Forke o projeto (caso você não tenha) 
+Caso você não tenha o projeto sob seu usuário, é necessário forkar o projeto.
+Esse procedimento também pode ser feito pelo próprio GitHub, basta acessar o repositório oficial e clicar no botão __Fork__ (lado direito superior da tela).
 
 ![forking](http://sc-cdn.scaleengine.net/i/7da9034fb0a31dec0ef0b5c5c5e71dee.png)
 
 ![forkingTo](http://sc-cdn.scaleengine.net/i/321e1eb548cbd155f75ca969bf99ecbc.png)
 
-Dado fork do projeto sob o seu usuário, você deve clonar seu o repositorio
+## Clonando o repositório
+
+Dado que você tem o fork do projeto sob seu usuário, você deve clonar o repositório
 
 ![clonning](http://sc-cdn.scaleengine.net/i/27a95a396b54a66fbc628e248d90560d.png)
 
-é necessário também adicionar também uma referência para o repositorio official
+É necessário também adicionar também uma referência para o repositorio oficial, usaremos esse apontamento para receber alterações do projeto oficial, temos que sempre ter isso sempre como mindset, sempre vamos se atualizar com o repositório oficial. Pode ser que alguma outra funcionalidade foi integrada ao projeto principal ou pode ser que alguma correção (hotfix) tenha sido encontrado e solucinado.
 
 ![remoting](http://sc-cdn.scaleengine.net/i/91862c232dd14bc9b665376d1d2a4dc9.png)
 
+Nosso repositório terá dois apontamentos
+
+Alias | Descrição
+------------ | -------------
+origin | nome *padrão*, aponta para o repositório padrão (no caso, o sob o seu usuário)
+official | aponta para o repositório oficial do projeto
+
 ## Iniciando o desenvolvimento da feature
 
-Depois disso, voce deve criar sua branch de trabalho a partir da branch da funcionalidade (feature-1), vamos supor que uma das tasks para entregar a feature-1 é criar uma modelagem de classes, você então pode criar a branch feature-1-modelo-de-classes
+Agora você tem todo repositório pronto, hora de começar a escrever lindas linhas de código, certo?
+
+Você deve criar uma branch a partir da branch da funcionalidade (no nosso caso, __feature-1__).
+Vamos supor que uma das tasks para entregar a __feature-1__ é criar uma modelagem de classes. 
+Você pode criar a branch feature-1-modelo-de-classes
 
 ![branching](http://sc-cdn.scaleengine.net/i/120af7bb5bf2668404b6bc335c4ad081.png)
 
 Nesse momento nossas branchs estão com o ponteiro para o mesmo commit:
 
 ![graph-on-branching](http://sc-cdn.scaleengine.net/i/8e4fafeac8daff39819c2089dd57c638.png)
+
+## Contribuindo
 
 Vamos dizer que voce trabalhou nesse modelo de classes e após dois commits, voce já pode "integrar" essa task
 
@@ -51,8 +70,6 @@ git log
 ![history-graph](http://sc-cdn.scaleengine.net/i/67bbdae1343a1a9a9e81317389b587a7.png)
 
 Dado uma pequena contribuição "pronta", já é possível criar um pull request para o repositorio oficial. Para fazer isso é necessário empurrar suas alterações para seu repositorio
-
-## Contribuindo
 
 ![1asdassda](http://sc-cdn.scaleengine.net/i/588eda2f950d81ebbf3040561a81110d.png)
 
