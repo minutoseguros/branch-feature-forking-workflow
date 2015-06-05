@@ -1,31 +1,41 @@
-# branch-feature-forking-workflow
+# Branch Feature Forking Workflow
 
 Branch Feature Forking Workflow é uma mistura de Branch Feature Workflow com Forking Workflow.
 
-Nova funcionalidade 
+* [Sumário]
+  * [Nova funcionalidade](#nova-funcionalidade)
+  * [Forking](#forking)
+  * [Iniciando o desenvolvimento da feature](#iniciando-o-desenvolvimento-da-feature)
+  * [Contribuindo](#contribuindo)
+  * [Atualizando seu repositório](#atualizando-seu-repositorio)
+  * [Feature em produção](#feature-em-producao)
+  * [Limpeza](#limpeza)
+  
+## Nova funcionalidade
 
-1. Primeira coisa devemos tirar um branch a partir da master no repositório oficial, isso pode ser feito inclusive pelo GitHub
+Primeira coisa devemos tirar um branch a partir da master no repositório oficial, isso pode ser feito inclusive pelo GitHub
+
 ![creating feature-1 branch](http://sc-cdn.scaleengine.net/i/a4338424388fdb37687dbf968097939f1.png)
 
-2. Forke o projeto (caso você não tenha) 
+## Forking
+
+Forke o projeto (caso você não tenha) 
+
 ![forking](http://sc-cdn.scaleengine.net/i/7da9034fb0a31dec0ef0b5c5c5e71dee.png)
+
 ![forkingTo](http://sc-cdn.scaleengine.net/i/321e1eb548cbd155f75ca969bf99ecbc.png)
 
-3. Dado fork do projeto sob o seu usuário, você deve clonar seu o repositorio
-```
-git clone https://github.com/lfreneda/sample-bffw/
-```
+Dado fork do projeto sob o seu usuário, você deve clonar seu o repositorio
 
 ![clonning](http://sc-cdn.scaleengine.net/i/27a95a396b54a66fbc628e248d90560d.png)
 
-4. é necessário também adicionar também uma referência para o repositorio official
+é necessário também adicionar também uma referência para o repositorio official
 
-```
-git remote add official (endereco_repositorio_official)
-```
 ![remoting](http://sc-cdn.scaleengine.net/i/91862c232dd14bc9b665376d1d2a4dc9.png)
 
-5. Depois disso, voce deve criar sua branch de trabalho a partir da branch da funcionalidade (feature-1), vamos supor que uma das tasks para entregar a feature-1 é criar uma modelagem de classes, você então pode criar a branch feature-1-modelo-de-classes
+## Iniciando o desenvolvimento da feature
+
+Depois disso, voce deve criar sua branch de trabalho a partir da branch da funcionalidade (feature-1), vamos supor que uma das tasks para entregar a feature-1 é criar uma modelagem de classes, você então pode criar a branch feature-1-modelo-de-classes
 
 ![branching](http://sc-cdn.scaleengine.net/i/120af7bb5bf2668404b6bc335c4ad081.png)
 
@@ -41,6 +51,8 @@ git log
 ![history-graph](http://sc-cdn.scaleengine.net/i/67bbdae1343a1a9a9e81317389b587a7.png)
 
 Dado uma pequena contribuição "pronta", já é possível criar um pull request para o repositorio oficial. Para fazer isso é necessário empurrar suas alterações para seu repositorio
+
+## Contribuindo
 
 ![1asdassda](http://sc-cdn.scaleengine.net/i/588eda2f950d81ebbf3040561a81110d.png)
 
@@ -60,12 +72,13 @@ Quando aceitar um pull request, aproveitar e deletar a branch remota com a alter
 
 ![delete-branch](http://sc-cdn.scaleengine.net/i/ec4e5b2155d715702bb158d1a41b1b3f1.png)
 
+## Atualizando seu repositório
+
 Caso seja aceito, é necessário atualizar sua branch com as novas contribuções, na verdade, essa prática deve ser frequentemente feita pelos membros da equipe em suas branchs "interessadas". 
 
 Grafico localmente antes de atualizar com as alteracoes do servidor
 
 ![graph-antes-atualizacao](http://sc-cdn.scaleengine.net/i/53ee710e0608dc430f1c4bad82ab3729.png)
-
 
 (falar do prune)
 
@@ -78,6 +91,8 @@ TA-DA :tada:
 Você também pode/deve limpar localmente as branchs que você ja integrou.
 
 ![branch-d](http://sc-cdn.scaleengine.net/i/b8089b83d3cd56f439393e685abe81c9.png)
+
+## Feature em produção
 
 Novas contribuições/pull requests serão feitos assim como o anterior, gerando uma arvore parecida com a seguinte:
 
@@ -92,6 +107,8 @@ Então, foram feitos 2 pull request para conclusão da feature-1, Dado que a fea
 Done :)
 
 Dado o PR da feature-1 para a master e o merge, temos que atualizar a nosso repositorio com a versao atual, esse procedimento é bem parecido com o anterior
+
+## Limpeza
 
 ![atualizando-ambiente](http://sc-cdn.scaleengine.net/i/b741f6f212cbfda51f88909a4d985ef0.png)
 
