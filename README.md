@@ -97,17 +97,16 @@ Ao aceitar um pull request pode se aproveitar e deletar a branch remota com a al
 
 ## Atualizando seu repositório
 
-Caso seja aceito, é necessário atualizar sua branch com as novas contribuções, na verdade, essa prática deve ser frequentemente feita pelos membros da equipe em suas branchs "interessadas". 
+Atualizar sempre o repositório é uma boa prática.
+Sempre que possível e obrigatóriamente após ter um pull request integrado deve se atualizar suas branchs __interessadas__.
 
-Grafico localmente antes de atualizar com as alteracoes do servidor
+Continuando na __feature-1__, temos a seguinte árvore quando fizemos nosso pull request
 
 ![graph-antes-atualizacao](http://sc-cdn.scaleengine.net/i/53ee710e0608dc430f1c4bad82ab3729.png)
 
-(falar do prune)
-
 ![ci](http://sc-cdn.scaleengine.net/i/2d6e97349b042ccd48d2b33f6d529a20.png)
 
-TA-DA :tada:
+Após a atualização das branchs __interessadas__, teremos a seguinte árvore:
 
 ![graph](http://sc-cdn.scaleengine.net/i/917d3fd475bc4cf2cd582ba80599a86c.png)
 
@@ -117,21 +116,18 @@ Você também pode/deve limpar localmente as branchs que você ja integrou.
 
 ## Feature em produção
 
+Vamos dizer que tivemos duas contribuições na __feature-1__.
 Novas contribuições/pull requests serão feitos assim como o anterior, gerando uma arvore parecida com a seguinte:
 
 ![graph-2](http://sc-cdn.scaleengine.net/i/9ab852bdd2f3358e733ad41e3b1fad14.png)
 
-Então, foram feitos 2 pull request para conclusão da feature-1, Dado que a feature já está pronta para ser coloca em produção, é possível fazer isso diretamente pelo GitHub
-
-(efeito cascata)
+Dado que a __feature-1__ já está pronta para ser coloca em produção, criaremos um pull request no próprio repositório oficial. Podemos fazer isso pelo GitHub
 
 ![master-feature-1-pr](http://sc-cdn.scaleengine.net/i/c00a173a81e7bd1174d4a0ce690ffa57.png)
 
-Done :)
-
-Dado o PR da feature-1 para a master e o merge, temos que atualizar a nosso repositorio com a versao atual, esse procedimento é bem parecido com o anterior
-
 ## Limpeza
+
+Depois que o pull request da funcionlidade completa (__feature-1__) para a __master__ e o merge, precisamos atualizar a nosso repositorio com a versão __master__ atual, esse procedimento é bem parecido com o [anterior](#atualizando-seu-repositório)
 
 ![atualizando-ambiente](http://sc-cdn.scaleengine.net/i/b741f6f212cbfda51f88909a4d985ef0.png)
 
@@ -141,26 +137,22 @@ Teremos um graph parecido com esse:
 
 E podemos limpar nossas branchs localmente e remotamente
 
-local
-
 ![cleaning-local-branch](http://sc-cdn.scaleengine.net/i/413c5d8775ca3cfbf9b0de11bb2767ed.png)
-
-remoto
-
 ![cleaning-remote-branch](http://sc-cdn.scaleengine.net/i/641375177ccf945b25db2f90159013eb.png)
-
-Também é preciso deletar a branch feature-1 que está sob seu usuario/repositorio, infelizmente o GitHub não limpa essa branch =(
-
 ![cleaning-remote-branch-user](http://sc-cdn.scaleengine.net/i/6c3e745ebb15761df05d8d13bb78886c.png)
 
 No final da limpeza teremos uma arvore parecida com a seguinte:
 
 ![graph-feature-merge](http://sc-cdn.scaleengine.net/i/9cde591cce1383454cbd45c63a0a2df3.png)
 
-Note que o ponteiro da origin/master está desatualizado, isso é verdade, pois acabamos não usando para nada, não necessariamente, mas como opçao, voce pode sincornizar sua master sob seu usuario :)
+Note que o ponteiro da origin/master está desatualizado.
+Na verdade, não usamos a __origin/master__ para nada. 
+Podemos sincronizar sua master sob seu usuario :)
 
 ![master-user](http://sc-cdn.scaleengine.net/i/a0767d8210c0952400aa4c6dd8431f3a.png)
 
 E finalmente, a arvore:
 
 ![graph-ufa](http://sc-cdn.scaleengine.net/i/8062ec97f356cc1692ee3792b3834a5f.png)
+
+TA-DA :tada:
