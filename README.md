@@ -75,4 +75,22 @@ TA-DA :tada:
 
 ![graph](http://sc-cdn.scaleengine.net/i/917d3fd475bc4cf2cd582ba80599a86c.png)
 
+Você também pode/deve limpar localmente as branchs que você ja integrou.
+
+![branch-d](http://sc-cdn.scaleengine.net/i/b8089b83d3cd56f439393e685abe81c9.png)
+
+Novas contribuições/pull requests serão feitos assim como o anterior, gerando uma arvore parecida com a seguinte:
+
+![graph-2](http://sc-cdn.scaleengine.net/i/9ab852bdd2f3358e733ad41e3b1fad14.png)
+
+Então, foram feitos 2 pull request para conclusão da feature-1, Dado que a feature já está pronta para ser coloca em produção, é possível fazer isso diretamente pelo GitHub
+
+(efeito cascata)
+
+![master-feature-1-pr](http://sc-cdn.scaleengine.net/i/c00a173a81e7bd1174d4a0ce690ffa57.png)
+
+Done :)
+
+
+
 
