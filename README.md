@@ -51,3 +51,28 @@ Automaticamente ao acessar o repositorio do projeto voce vera ~Compare & pull re
 Importante lembrar que você deve selecionar como base fork a branch feature, no caso feature-1
 
 ![open-pull-request](http://sc-cdn.scaleengine.net/i/7bd847c3793d3bb34e9b0ad48126fd79.png)
+
+Pull request criado, será avaliado pelo time.
+
+Caso seja rejeitado, é necessário fechar o pull request, basicamente o que você tem que fazer é implementar as correções e criar outro pull request posteriormente.
+
+Quando aceitar um pull request, aproveitar e deletar a branch remota com a alteração, isso é feito pelo botão "Delete branch"
+
+![delete-branch](http://sc-cdn.scaleengine.net/i/ec4e5b2155d715702bb158d1a41b1b3f1.png)
+
+Caso seja aceito, é necessário atualizar sua branch com as novas contribuções, na verdade, essa prática deve ser frequentemente feita pelos membros da equipe em suas branchs "interessadas". 
+
+Grafico localmente antes de atualizar com as alteracoes do servidor
+
+![graph-antes-atualizacao](http://sc-cdn.scaleengine.net/i/53ee710e0608dc430f1c4bad82ab3729.png)
+
+
+(falar do prune)
+
+![ci](http://sc-cdn.scaleengine.net/i/2d6e97349b042ccd48d2b33f6d529a20.png)
+
+TA-DA :tada:
+
+![graph](http://sc-cdn.scaleengine.net/i/917d3fd475bc4cf2cd582ba80599a86c.png)
+
+
