@@ -91,6 +91,36 @@ Então, foram feitos 2 pull request para conclusão da feature-1, Dado que a fea
 
 Done :)
 
+Dado o PR da feature-1 para a master e o merge, temos que atualizar a nosso repositorio com a versao atual, esse procedimento é bem parecido com o anterior
 
+![atualizando-ambiente](http://sc-cdn.scaleengine.net/i/b741f6f212cbfda51f88909a4d985ef0.png)
 
+Teremos um graph parecido com esse: 
 
+![graph-feature-1](http://sc-cdn.scaleengine.net/i/35ee1713c32981fcd7d1ef97d7c0dc80.png)
+
+E podemos limpar nossas branchs localmente e remotamente
+
+local
+
+![cleaning-local-branch](http://sc-cdn.scaleengine.net/i/413c5d8775ca3cfbf9b0de11bb2767ed.png)
+
+remoto
+
+![cleaning-remote-branch](http://sc-cdn.scaleengine.net/i/641375177ccf945b25db2f90159013eb.png)
+
+Também é preciso deletar a branch feature-1 que está sob seu usuario/repositorio, infelizmente o GitHub não limpa essa branch =(
+
+![cleaning-remote-branch-user](http://sc-cdn.scaleengine.net/i/6c3e745ebb15761df05d8d13bb78886c.png)
+
+No final da limpeza teremos uma arvore parecida com a seguinte:
+
+![graph-feature-merge](http://sc-cdn.scaleengine.net/i/9cde591cce1383454cbd45c63a0a2df3.png)
+
+Note que o ponteiro da origin/master está desatualizado, isso é verdade, pois acabamos não usando para nada, não necessariamente, mas como opçao, voce pode sincornizar sua master sob seu usuario :)
+
+![master-user](http://sc-cdn.scaleengine.net/i/a0767d8210c0952400aa4c6dd8431f3a.png)
+
+E finalmente, a arvore:
+
+![graph-ufa](http://sc-cdn.scaleengine.net/i/8062ec97f356cc1692ee3792b3834a5f.png)
