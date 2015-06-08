@@ -78,6 +78,8 @@ Para fazer isso é necessário *empurrar* suas alterações
 
 ![ci](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/15-updated-local-repository.png)
 
+![rebase your branch feature](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/28-contribuindo-rebase-before-pushing.png)
+
 ![git-push](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/10-pushing-feature-commits.png)
 
 Automaticamente depois do __git push__, quando acessar o repositorio do oficial projeto voce verá um botão verde __Compare & pull request__
