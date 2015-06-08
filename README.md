@@ -166,3 +166,7 @@ E finalmente, a arvore:
 ![graph-ufa](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/27-graph-done.png)
 
 TA-DA :tada:
+
+# Contribuições
+
+Abra um [issue](https://github.com/lfreneda/branch-feature-forking-workflow/issues/new) com dúvidas ou sugestões ou envie um pull request 
