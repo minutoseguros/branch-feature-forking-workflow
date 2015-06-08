@@ -73,6 +73,10 @@ Vamos dizer que voce trabalhou no modelo de classes da __feature-1__ e após (*d
 Dado uma pequena contribuição "pronta", já é possível criar um pull request para o repositorio oficial. 
 Para fazer isso é necessário *empurrar* suas alterações
 
+É uma boa prática sempre atualizar seu repositório antes de enviar uma contribuição, pode ser que algum pull request foi integrado ou em produção ou na branch feature.
+
+![ci](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/15-updated-local-repository.png)
+
 ![git-push](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/10-pushing-feature-commits.png)
 
 Automaticamente depois do __git push__, quando acessar o repositorio do oficial projeto voce verá um botão verde __Compare & pull request__
