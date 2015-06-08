@@ -3,6 +3,9 @@
 Branch Feature Forking Workflow é uma mistura de Branch Feature Workflow com Forking Workflow.
 Baseado em [Git Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/)
 
+Não é a intenção desse guide explicar em detalhes o que cada comando do Git faz e sim ilustrar as etapas do workflow.
+É necessário um conhecimento básico do Git e seus comandos para entender e usar o BFFWorkflow. 
+
 * [Sumário]
   * [Nova funcionalidade](#nova-funcionalidade)
   * [Forking](#forking)
