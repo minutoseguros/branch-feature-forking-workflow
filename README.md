@@ -3,7 +3,7 @@
 Branch Feature Forking Workflow é uma mistura de Branch Feature Workflow com Forking Workflow.
 Baseado em [Git Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/)
 
-Não é a intenção desse guide explicar em detalhes o que cada comando do Git faz e sim ilustrar as etapas do workflow.
+Não é a intenção desse guia explicar em detalhes o que cada comando do Git faz e sim ilustrar as etapas do workflow.
 É necessário um conhecimento básico do Git e seus comandos para entender e usar o BFFWorkflow. 
 
 * [Sumário]
@@ -40,7 +40,7 @@ Dado que você tem o fork do projeto sob seu usuário, você deve clonar o repos
 
 ![clonning](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/4-cloning-commandline.png)
 
-É necessário também adicionar também uma referência para o repositorio oficial, usaremos esse apontamento para receber alterações do projeto oficial, temos que sempre ter isso sempre como mindset, sempre vamos se atualizar com o repositório oficial. Pode ser que alguma outra funcionalidade foi integrada ao projeto principal ou pode ser que alguma correção (hotfix) tenha sido encontrado e solucinado.
+É necessário também adicionar também uma referência para o repositório oficial, usaremos esse apontamento para receber alterações do projeto oficial, temos que sempre ter isso sempre como mindset, sempre vamos se atualizar com o repositório oficial. Pode ser que alguma outra funcionalidade foi integrada ao projeto principal ou pode ser que alguma correção (hotfix) tenha sido encontrado e solucionado.
 
 ![remoting](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/5-remote-add-official.png)
 
@@ -68,13 +68,13 @@ Nesse momento nossas branchs estão com o ponteiro para o mesmo commit, teremos 
 
 ## Contribuindo
 
-Vamos dizer que voce trabalhou no modelo de classes da __feature-1__ e após (*dois*) commits, você já pode "contribuir" para a funcinalidade __feature-1__.
+Vamos dizer que você trabalhou no modelo de classes da __feature-1__ e após (*dois*) commits, você já pode "contribuir" para a funcionalidade __feature-1__.
 
 ![git-log](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/8-git-log.png)
 
 ![history-graph](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/9-graph-after-commitin.png)
 
-Dado uma pequena contribuição "pronta", já é possível criar um pull request para o repositorio oficial. 
+Dado uma pequena contribuição "pronta", já é possível criar um pull request para o repositório oficial. 
 Para fazer isso é necessário *empurrar* suas alterações
 
 É uma boa prática sempre atualizar seu repositório antes de enviar uma contribuição, pode ser que algum pull request foi integrado em produção ou na branch feature.
@@ -85,7 +85,7 @@ Para fazer isso é necessário *empurrar* suas alterações
 
 ![git-push](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/10-pushing-feature-commits.png)
 
-Automaticamente depois do __git push__, quando acessar o repositorio do oficial projeto voce verá um botão verde __Compare & pull request__
+Automaticamente depois do __git push__, quando acessar o repositório do oficial projeto você verá um botão verde __Compare & pull request__
 
 ![compare-and-pull-request](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/11-compare-and-pull-request.png)
 
@@ -108,7 +108,7 @@ Ao aceitar um pull request pode se aproveitar e deletar a branch remota com a al
 ## Atualizando seu repositório
 
 Atualizar sempre o repositório é uma boa prática.
-Sempre que possível e obrigatóriamente após ter um pull request integrado deve se atualizar suas branchs __interessadas__.
+Sempre que possível e obrigatoriamente após ter um pull request integrado deve se atualizar suas branchs __interessadas__.
 
 Continuando na __feature-1__, temos a seguinte árvore quando fizemos nosso pull request
 
@@ -120,14 +120,14 @@ Após a atualização das branchs __interessadas__, teremos a seguinte árvore:
 
 ![graph](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/16-graph-local-repository-updated.png)
 
-Você também pode/deve limpar localmente as branchs que você ja integrou.
+Você também pode/deve limpar localmente as branchs que você já integrou.
 
 ![branch-d](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/17-cleaning-delete-local-branch.png)
 
 ## Feature em produção
 
 Vamos dizer que tivemos duas contribuições na __feature-1__.
-Novas contribuições/pull requests serão feitos assim como o anterior, gerando uma arvore parecida com a seguinte:
+Novas contribuições/pull requests serão feitos assim como o anterior, gerando uma árvore parecida com a seguinte:
 
 ![graph-2](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/18-graph-feature-in-production.png)
 
@@ -137,11 +137,11 @@ Dado que a __feature-1__ já está pronta para ser coloca em produção, criarem
 
 ## Limpeza
 
-Depois que o pull request da funcionlidade completa (__feature-1__) para a __master__ e o merge, precisamos atualizar a nosso repositorio com a versão __master__ atual, esse procedimento é bem parecido com o [anterior](#atualizando-seu-repositório)
+Depois que o pull request da funcionalidade completa (__feature-1__) para a __master__ e o merge, precisamos atualizar a nosso repositório com a versão __master__ atual, esse procedimento é bem parecido com o [anterior](#atualizando-seu-repositório)
 
 ![atualizando-ambiente](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/20-cleaning-remote-prune.png)
 
-Teremos um graph parecido com esse: 
+Teremos um grafo parecido com esse: 
 
 ![graph-feature-1](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/21-merge-with-master.png)
 
@@ -151,17 +151,17 @@ E podemos limpar nossas branchs localmente e remotamente
 ![cleaning-remote-branch](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/23-prune-remote-official.png)
 ![cleaning-remote-branch-user](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/24-delete-remote-origin-feature.png)
 
-No final da limpeza teremos uma arvore parecida com a seguinte:
+No final da limpeza teremos uma árvore parecida com a seguinte:
 
 ![graph-feature-merge](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/25-graph-almost-done.png)
 
 Note que o ponteiro da origin/master está desatualizado.
 Na verdade, não usamos a __origin/master__ para nada. 
-Podemos sincronizar sua master sob seu usuario :)
+Podemos sincronizar sua master sob seu usuário :)
 
 ![master-user](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/26-pushing-master-origin.png)
 
-E finalmente, a arvore:
+E finalmente, a árvore:
 
 ![graph-ufa](https://raw.githubusercontent.com/lfreneda/branch-feature-forking-workflow/master/images/27-graph-done.png)
 
